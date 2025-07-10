@@ -12,18 +12,12 @@
 <body>
     <header class="header">
         <a href="#" class="logo">Portfolio</a>
-
-        <!-- <i class="fa-solid fa-bars" id="menu-icon"></i> -->
-
-
         <nav class="navbar">
-
-            <a href="#home" class="active">Home</a>
+            <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
-            <a href="#contact" class="hide">Contact</a>
-
-
+            <a href="#portfolio" class="active">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
@@ -31,69 +25,57 @@
         <div class="home-content">
             <h3>Hi, Myself</h3>
             <h1>Ashish Devlekar</h1>
-            <h3>And I'm a <span class="multiple-text "></span></h3>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
             <p>To secure a position in an organization where I can begin my career as a fresher. I aim to apply my
-                knowledge and problem-solving skills
-                to solve real-world challenges, gain valuable experience, and expand my understanding across diverse
-                domains. </p>
+                knowledge and problem-solving skills to solve real-world challenges, gain valuable experience, and
+                expand my understanding across diverse domains.</p>
             <div class="social-media">
                 <a href="https://www.facebook.com/AshishDevlekar99"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/_ashish_devlekar/?next=%2F&hl=en"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/_ashish_devlekar/?next=%2F&hl=en"><i
+                        class="fa-brands fa-instagram"></i></a>
                 <a href="https://x.com/ashishdevlekar"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/ashish-devlekar/ "><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/ashish-devlekar/"><i class="fa-brands fa-linkedin"></i></a>
             </div>
             <a href="Ashish_Devlekar_Resume.pdf" class="btn">Download CV</a>
         </div>
-
         <div class="home-img">
             <img src="image1.png" alt="">
         </div>
     </section>
 
-    <!-- ABOUT SECTION -->
-
-
     <section class="about" id="about">
         <div class="about-img">
             <img src="imageabout1.jpg" alt="">
         </div>
-
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
             <h3>Frontend Developer</h3>
             <p>To secure a position in an organization where I can begin my career as a fresher. I aim to apply my
-                knowledge and problem-solving skills
-                to solve real-world challenges, gain valuable experience, and expand my understanding across diverse
-                domains. I also have experience as
-                a group leader and team member in mini projects, which has further developed my collaborative abilities.
-            </p>
+                knowledge and problem-solving skills to solve real-world challenges, gain valuable experience, and
+                expand my understanding across diverse domains. I also have experience as a group leader and team member
+                in mini projects, which has further developed my collaborative abilities.</p>
             <a href="certificates.pdf" class="btn">Read more</a>
         </div>
     </section>
 
-    <!-- Service Section -->
     <section class="services" id="services">
         <h2 class="heading">My <span>Services</span></h2>
-
         <div class="services-container">
             <div class="services-box">
                 <i class="fa-solid fa-code"></i>
                 <h3>Web Development</h3>
                 <p>Creating responsive and interactive user interfaces using HTML, CSS, JavaScript, and modern
-                    frameworks </p>
+                    frameworks</p>
                 <a href="#" class="btn">Read More</a>
             </div>
-
             <div class="services-box">
                 <i class="fa-solid fa-database"></i>
                 <h3>Database Management</h3>
                 <p>Creating efficient database structures using MySQL, MongoDB</p>
                 <a href="#" class="btn">Read More</a>
             </div>
-
             <div class="services-box">
                 <i class="fa-solid fa-gears"></i>
-
                 <h3>AI and Machine Learning</h3>
                 <p>Extracting insights from data using tools like Python (Pandas, NumPy).</p>
                 <a href="#" class="btn">Read More</a>
@@ -101,91 +83,197 @@
         </div>
     </section>
 
-    <!-- PORTFOLIO SECTION DESIGN -->
-
+    <!-- ENHANCED PORTFOLIO SECTION -->
     <section class="portfolio" id="portfolio">
         <h2 class="heading">Latest <span>Projects</span></h2>
 
-        <div class="porfolio-container">
-            <div class="porfolio-box">
-                <img src="portfolioimg1.png" alt="">
-                <div class="porfolio-layer">
-                    <h4><b>Library Management System</b></h4>
-                    <p>Developed Library Management System using Tkinter GUI in Python. Designed to manage library
-                        operations including book
-                        cataloging and member registration.</p>
+        <div class="portfolio-container">
+
+            <!-- Library Management System -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="portfolioimg1.png" alt="Library Management System">
+                    <div class="project-status">Desktop App</div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Library Management System</h3>
+                    <p class="project-description">
+                        A comprehensive desktop application designed to streamline library operations with an intuitive
+                        interface for managing books, members, and transactions efficiently.
+                    </p>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul class="feature-list">
+                            <li>Complete book catalog management</li>
+                            <li>Member registration and tracking</li>
+                            <li>Issue and return tracking system</li>
+                            <li>Advanced search and filtering</li>
+                            <li>Automated fine calculations</li>
+                            <li>Detailed reporting system</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Tkinter</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">Database Design</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-btn" onclick="openModal('library-modal')">
+                            <i class="fas fa-info-circle"></i> View Details
+                        </a>
+                        <a href="https://github.com/ashishdevlekar" target="_blank" class="project-btn secondary">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <div class="porfolio-box">
-                <img src="portfolioimg2.png" alt="">
-                <div class="porfolio-layer">
-                    <h4><b>Attendance Management System Using Face Recognition</b></h4>
-                    <p>Developed Attendance System using Face Recognition employing image processing techniques. </p>
+            <!-- Face Recognition Attendance System -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="portfolioimg2.png" alt="Face Recognition System">
+                    <div class="project-status">AI Project</div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Face Recognition Attendance System</h3>
+                    <p class="project-description">
+                        An innovative AI-powered solution that automates attendance tracking using advanced computer
+                        vision and machine learning algorithms for accurate face detection and recognition.
+                    </p>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul class="feature-list">
+                            <li>Real-time face detection and recognition</li>
+                            <li>Automated attendance logging</li>
+                            <li>Multiple person detection</li>
+                            <li>Anti-spoofing mechanisms</li>
+                            <li>Comprehensive attendance reports</li>
+                            <li>User-friendly admin interface</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Face Recognition</span>
+                        <span class="tech-tag">NumPy</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-btn" onclick="openModal('face-modal')">
+                            <i class="fas fa-info-circle"></i> View Details
+                        </a>
+                        <a href="https://github.com/ashishdevlekar" target="_blank" class="project-btn secondary">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
                 </div>
             </div>
-          
-            <div class="porfolio-box" >
-                <img src="portfolioimg3.png" alt="">
-                <div class="porfolio-layer">
-                    <h4><b>Password Manager</b></h4>
-                    <p>A Password Manager is a secure tool that helps users generate, store, and manage their passwords.</p>
-                     <a href="https://ashishdevlekar.github.io/Password-Manager/" class="project-btn" target="_blank">View Project</a>
-  </div>
+
+            <!-- Password Manager -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="portfolioimg3.png" alt="Password Manager">
+                    <div class="project-status">Web App</div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Secure Password Manager</h3>
+                    <p class="project-description">
+                        A modern web-based password management solution that helps users store, and manage their
+                        passwords securely with advanced encryption and user-friendly interface.
+                    </p>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul class="feature-list">
+                            <li>Secure password storage</li>
+                            <li>Password strength analysis</li>
+                            <li>Category-based organization</li>
+                            <li>Search and filter functionality</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">Local Storage</span>
+                        <span class="tech-tag">Cryptography</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://ashishdevlekar.github.io/Password-Manager/" target="_blank"
+                            class="project-btn">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/ashishdevlekar/Password-Manager" target="_blank"
+                            class="project-btn secondary">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
                 </div>
             </div>
-            
 
-            <!-- <div class="porfolio-box">
-                <img src="pofolioimg4.png" alt="">
-                <div class="porfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <!-- ✅ E-Commerce Dashboard (Correctly aligned now) -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="portfolioimg4.png" alt="E-Commerce Dashboard">
+                    <div class="project-status">Full Stack</div>
                 </div>
-            </div>
+                <div class="project-content">
+                    <h3 class="project-title">E-Commerce Dashboard</h3>
+                    <p class="project-description">
+                        A robust full-stack E-Commerce Dashboard built using the MERN stack. It includes secure
+                        card-based payment processing, user authentication with protected routes, and an admin panel for
+                        managing products, orders, and users. Features include real-time order tracking, dynamic stock
+                        updates, and a responsive, modern UI tailored for both desktop and mobile users.
+                    </p>
 
-            <div class="porfolio-box">
-                <img src="portfolioimg5.jpeg" alt="">
-                <div class="porfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul class="feature-list">
+                            <li>Role-based authentication (Admin/User)</li>
+                            <li>Product & order management dashboard</li>
+                            <li>Card payment integration</li>
+                            <li>Real-time cart & order tracking</li>
+                            <li>MongoDB Atlas & RESTful API backend</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                        <a href="https://e-dashboard-mz5d.vercel.app/" target="_blank"
+                            class="project-btn">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/ashishdevlekar/Password-Manager" target="_blank"
+                            class="project-btn secondary">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="porfolio-box">
-                <img src="porfolioimg6.JPG" alt="">
-                <div class="porfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                </div>
-            </div> -->
-
-        </div>
+            </div> <!-- End of .portfolio-container -->
     </section>
 
-    <!-- CONTACT SECTION -->
+
     <section class="contact" id="contact">
         <form action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="d4a7647f-2da3-4a63-8126-5656a2406ba8">
-
             <h2 class="heading">Contact <span>Me</span></h2>
-
-
             <div class="input-box">
                 <input type="text" name="first_name" placeholder="Full Name">
-                <input type="Email" name="first_name" placeholder="Email Address">
+                <input type="email" name="email" placeholder="Email Address">
             </div>
-
             <div class="input-box">
-                <input type="tel" id="mobile_number" name="mobile_number" placeholder=" Enter your mobile number">
-                <input type="Text" name="first_name" placeholder="Email Subject">
+                <input type="tel" name="mobile_number" placeholder="Mobile Number">
+                <input type="text" name="subject" placeholder="Email Subject">
             </div>
-            <textarea name="first_name" id="" cols="10" rows="10" placeholder="Your Message"></textarea>
+            <textarea name="message" cols="10" rows="10" placeholder="Your Message"></textarea>
             <input type="submit" value="Send Message" class="btn">
         </form>
     </section>
-
-    <!-- FOOTER SECTION -->
 
     <footer class="footer">
         <div class="footer-text">
@@ -196,13 +284,62 @@
         </div>
     </footer>
 
-    <!-- MAIN JS -->
+    <!-- Modal for Library Management System -->
+    <div id="library-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('library-modal')">&times;</span>
+            <h2>Library Management System - Detailed Overview</h2>
+            <h3>Project Description</h3>
+            <p>The Library Management System is a comprehensive desktop application built to digitize and streamline
+                library operations. This project demonstrates proficiency in GUI development, database management, and
+                system design.</p>
 
+            <h3>Technical Implementation</h3>
+            <p>Built using Python's Tkinter framework for the GUI and SQLite for database management. The system follows
+                a modular architecture with separate modules for different functionalities.</p>
 
+            <h3>Challenges Overcome</h3>
+            <ul>
+                <li>Implementing efficient search algorithms for large book catalogs</li>
+                <li>Designing user-friendly interfaces for different user roles</li>
+                <li>Creating robust error handling and validation systems</li>
+                <li>Optimizing database queries for better performance</li>
+            </ul>
 
+            <h3>Future Enhancements</h3>
+            <p>Plans include adding barcode scanning, web-based interface, and integration with external library
+                databases.</p>
+        </div>
+    </div>
 
+    <!-- Modal for Face Recognition System -->
+    <div id="face-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('face-modal')">&times;</span>
+            <h2>Face Recognition Attendance System - Detailed Overview</h2>
+            <h3>Project Description</h3>
+            <p>An AI-powered attendance system that leverages computer vision and machine learning to automatically
+                detect and recognize faces for attendance tracking. This project showcases expertise in artificial
+                intelligence and computer vision.</p>
 
+            <h3>Technical Implementation</h3>
+            <p>Utilizes OpenCV for image processing, face detection algorithms, and machine learning models for face
+                recognition. The system includes a training module for new faces and a recognition module for attendance
+                marking.</p>
 
+            <h3>Key Algorithms Used</h3>
+            <ul>
+                <li>Haar Cascade Classifiers for face detection</li>
+                <li>LBPH (Local Binary Patterns Histograms) for face recognition</li>
+                <li>Image preprocessing and enhancement techniques</li>
+                <li>Real-time video processing optimization</li>
+            </ul>
+
+            <h3>Applications</h3>
+            <p>Suitable for educational institutions, corporate offices, and any organization requiring automated
+                attendance tracking with high accuracy and anti-spoofing capabilities.</p>
+        </div>
+    </div>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
