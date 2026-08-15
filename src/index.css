@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", ui-sans-serif, sans-serif;
+  --font-body: "IBM Plex Sans", ui-sans-serif, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  /* fixed brand tokens — used only by the permanently-dark Hero/Contact bookend sections */
+  --color-paper: #F6F7FB;
+  --color-ink: #10192E;
+  --color-blueprint: #2451D6;
+  --color-blueprint-dark: #1B3AA3;
+  --color-blueprint-light: #8FB1FF;
+  --color-blueprint-soft: #E7ECFC;
+  --color-amber: #E0821F;
+  --color-amber-soft: #FBE9D4;
+
+  /* theme-aware tokens — respond to the light/dark toggle, used everywhere else */
+  --color-surface: var(--bg);
+  --color-surface-alt: var(--bg-alt);
+  --color-fg: var(--text);
+  --color-fg-soft: var(--text-soft);
+  --color-edge: var(--edge);
+  --color-accent: var(--accent-text);
+}
+
+:root {
+  --bg: #EAF2FC;
+  --bg-alt: #DCE7FB;
+  --text: #10192E;
+  --text-soft: #4B5875;
+  --edge: #C3D2F0;
+  --accent-text: #2451D6;
+}
+
+.dark {
+  --bg: #0B1220;
+  --bg-alt: #131C30;
+  --text: #F3F6FC;
+  --text-soft: #93A2C4;
+  --edge: #263252;
+  --accent-text: #8FB1FF;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-fg);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* blueprint grid backdrop — adapts automatically via the --edge variable */
+.grid-accent {
+  background-image:
+    linear-gradient(color-mix(in srgb, var(--edge) 70%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--edge) 70%, transparent) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--accent-text);
+  outline-offset: 3px;
+}
