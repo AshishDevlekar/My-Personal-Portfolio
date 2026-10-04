@@ -48,17 +48,20 @@ export const experience = {
 };
 
 export const projects = [
-  {
+    {
     id: "documind",
     detail: "A",
     tag: "LLM + RAG",
-    status: "Building",
+    status: "Live",
     name: "DocuMind",
     subtitle: "AI Document Intelligence Assistant",
     description:
-      "A retrieval-augmented system for asking natural-language questions over uploaded documents, with answers cited back to source pages — applying the same document-intelligence thinking used to automate report analysis at Cushman & Wakefield.",
-    stack: ["FastAPI", "React", "ChromaDB", "OpenAI API", "PyMuPDF"],
-    links: { live: null, code: null },
+      "A retrieval-augmented system for asking natural-language questions over uploaded documents, with answers cited back to source pages — applying the same document-intelligence thinking used to automate report analysis at Cushman & Wakefield. Hosted on a free tier, so the first load may take about a minute to wake up.",
+    stack: ["FastAPI", "React", "ChromaDB", "Groq", "PyMuPDF"],
+    links: {
+      live: "https://docu-mind-ruddy.vercel.app/",
+      code: "https://github.com/AshishDevlekar/DocuMind",
+    },
   },
   {
     id: "traya",
